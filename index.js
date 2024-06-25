@@ -46,3 +46,94 @@ console.log( findMax() );
 
 
 
+
+
+// 4) Write a function named ‘reverseString’ that takes a string and returns the string reversed.
+
+
+function reverseString(str){
+    const reversedString = str.split("").reduce((acc, char) => char + acc, "");
+    console.log(reversedString);
+}
+
+reverseString("JavaScript");
+
+
+
+
+
+
+// 5) Write a function named ‘filterOddNumbers’ that takes an array of numbers and returns a new array containing only the odd numbers.
+
+
+const filterOddNumbers = () => {
+
+    let arr = [ 2 , 1 , 5 , 8 , 77 , 9 , ];
+
+    let newArr = arr.filter( ( val ) => {
+        return val % 2 === 1;
+    } )
+
+    return newArr;
+}
+
+console.log(filterOddNumbers());
+
+
+
+
+
+
+// 6) Write a function named ‘sumArray’ that takes an array of numbers and returns the sum of all elements.
+
+
+const sumArray = () => {
+
+    let arr = [ 1 , 2 , 3 , 4 , 5 ];
+
+    let sumArr = arr.reduce( ( prev , curr ) => {
+        return prev + curr;
+    } )
+
+    return sumArr;
+}
+
+console.log(sumArray());
+
+
+
+
+
+
+
+// 7) Write a function named ‘sortArray’ that takes an array of numbers and returns a new array sorted in ascending order.
+
+
+const sortArray = () => {
+
+    let arr = [ 5 , 3 , 1 , 4 , 0 , -6 ];
+
+    let sortArr = arr.sort();
+    return sortArr;
+}
+
+console.log(sortArray());
+
+
+
+
+
+
+
+
+// 8) Write a function named ‘capitalizeFirstLetter’ that takes a string and returns the same string with the first letter capitalized. Ex-  console.log(capitalizeFirstLetter("hello"));  // Output:  "Hello"
+
+
+function capitalizeFirstLetter(str) {
+    output = str.charAt(0).toUpperCase() + str.slice(1);
+    return output;
+}
+
+console.log(capitalizeFirstLetter("javascript")); // Output: "Hello"
+
+
